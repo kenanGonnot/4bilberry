@@ -1,0 +1,22 @@
+Theoretical Questions :
+
+Q1. How would you automatically select the best unannotated images in order to improve a computer vision classification algorithm ?
+
+A1 : I will already pay attention to what kind of image we need. I will do some image scrapping close to the use case, for example: in the case of a model that trains with images of smartphone pictures, I will look for images that correspond to our case.
+Then I will look for images that do not look too much like those of the dataset, for example: let's imagine that the goal of the model is to recognize a dog or a cat, so I will look for images of dogs and cats of a breed that I do not have in my datasets.
+After retrieving "unlabeled" images, I will give this new database to a CNN model that has been trained beforehand with the database (labeled images) we have.
+I will retrieve the images with the most ambiguous result or where the model has difficulty identifying the identity of the image.
+Then I will label these images myself and give them to the model.
+
+
+Q2. What techniques would you use ?
+
+A2 : I will certainly use a model using transfer learning that has been trained with the labeled images.
+
+
+Q3. What do you know about active-learning (in deeplearning) ?
+
+A3 : I did not learn about active-learning during my studies.
+But according to my research on the internet, it would be a technique of image selection that will be used to train the model.
+
+
